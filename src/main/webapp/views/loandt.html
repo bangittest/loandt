@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<table class="table">
+    <thead>
+    <tr>
+        <th>loan_amnt</th>
+        <th>term</th>
+        <th>int_rate</th>
+        <th>installment</th>
+        <th>grade</th>
+        <th>sub_grade</th>
+        <th>emp_title</th>
+        <th>emp_length</th>
+        <th>home_ownership</th>
+        <th>annual_inc</th>
+        <th>verification_status</th>
+        <th>issue_d</th>
+        <th>loan_status</th>
+        <th>purpose</th>
+        <th>title</th>
+        <th>dti</th>
+        <th>earliest_cr_line</th>
+        <th>open_acc</th>
+        <th>pub_rec</th>
+        <th>revol_bal</th>
+        <th>revol_util</th>
+        <th>total_acc</th>
+        <th>nitial_list_status t</th>
+        <th>application_type</th>
+        <th>mort_acc</th>
+        <th>pub_rec_bankruptcies</th>
+        <th>address</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="item: ${list}">
+        <td scope="row" th:text="${item.loanAmnt}"></td>
+        <td th:text="${item.term}"></td>
+        <td th:text="${item.intRate}"></td>
+        <td th:text="${item.installment}"></td>
+        <td th:text="${item.grade}"></td>
+        <td th:text="${item.subGrade}"></td>
+        <td th:text="${item.empTitle}"></td>
+        <td th:text="${item.empLength}"></td>
+        <td th:text="${item.homeOwnership}"></td>
+        <td th:text="${item.annualInc}"></td>
+        <td th:text="${item.virificationStatus}"></td>
+        <td th:text="${item.issueD}"></td>
+        <td th:text="${item.purpose}"></td>
+        <td th:text="${item.title}"></td>
+        <td th:text="${item.dti}"></td>
+        <td th:text="${item.earliest_cr_line}"></td>
+        <td th:text="${item.open_acc}"></td>
+        <td th:text="${item.initial_list_status}"></td>
+        <td th:text="${item.application_type}"> </td>
+        <td th:text="${item.mort_acc}"></td>
+        <td th:text="${item.pub_rec_bankruptcies}"></td>
+        <td th:text="${item.address}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
